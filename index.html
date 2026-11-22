@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/">
+	<link rel="stylesheet" href="./css/mobile.css"> 
+	<title>Assignment 02</title>
+	<!--  CSS font icon -->
+	<link rel="stylesheet" href="css/font.css">
+
+	<!-- Google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- ******************  BANNER  ****************** -->
+	<div id="banner">
+		<h1 class="p-8">Lê Quang Huy</h1>
+		<span>Full Stack Developer</span>
+	</div>
+	<!-- ******************  NAVIGATION  ****************** -->
+	<section id="nav-bar">
+		<nav class="nav-bar-container">
+			
+				<a class="navbar-brand" href="#"> <span > Thông tin </span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 20 20" fill="currentColor">
+						<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+							clip-rule="evenodd" />
+					</svg>
+				</a>
+
+				<a class="navbar-brand" href="#">
+					<span> Lý lịch </span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 20 20" fill="currentColor">
+						<path fill-rule="evenodd"
+							d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm1 8a1 1 0 100 2h6a1 1 0 100-2H7z"
+							clip-rule="evenodd" />
+					</svg>
+				</a>
+				<a class="navbar-brand" href="#">
+					<span>Chứng chỉ</span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 20 20" fill="currentColor">
+						<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+						<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+					</svg>
+				</a>
+				<a class="navbar-brand" href="#">
+					<span> Dự Án</span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 20 20" fill="currentColor">
+						<path
+							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+					</svg>
+				</a>
+				<img src= "/images/my-avatar.jpg" alt="avatar">
+				<!-- <img src="/images/default-avatar.jpg" alt="avatar"> -->
+		</nav>
+	</section>
+
+	<!-- ****************** SECTION ABOUT ****************** -->
+	<section id="about" class="bg-grey">
+		<div class="container">
+			<div id="target">
+				<h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+				<p>
+					Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+					Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị
+					trí <b>Fullstack Developer</b>, có thể vận dụng những kiến
+					thức đã được trau dồi và không ngừng học hỏi để phát triển
+					bản thân, cũng như hoàn thành tốt nhất công việc được giao.
+				</p>
+			</div>
+			<div id="personal-info">
+				<h1 class="section-title">Thông tin cá nhân</h1>
+				<div id="forminput">
+						<input type="email" id="inpEmail" placeholder="Enter email"
+						required />
+						<label>Hãy nhập email để xác thực</label>
+						<button id="btnSubmit">Submit</button>
+				</div>
+				<ul id="per-info" class="mt-40 info hide">
+					<li><span>Giới tính</span> : Nam</li>
+					<li><span>Ngày sinh</span> : 14/05/2008</li>
+					<li><span>Điện thoại</span> : 096*01****</li>
+					<li><span>Email</span> : huylqFX29816@funix.edu.vn</li>
+					<li><span>Địa chỉ</span> : Hà Nội</li>
+					<li><span>Website</span> : https://abc.tech</li>
+				</ul>
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" class="about-icon" viewBox="0 0 512 512"
+						fill="currentColor">
+						<path
+							d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" class="about-icon" viewBox="0 0 320 512"
+						fill="currentColor">
+						<path
+							d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" class="about-icon" viewBox="0 0 512 512"
+						fill="currentColor">
+						<path
+							d="M256,8C119.1,8,8,119.1,8,256S119.1,504,256,504,504,392.9,504,256,392.9,8,256,8ZM185.3,380a124,124,0,0,1,0-248c31.3,0,60.1,11,83,32.3l-33.6,32.6c-13.2-12.9-31.3-19.1-49.4-19.1-42.9,0-77.2,35.5-77.2,78.1S142.3,334,185.3,334c32.6,0,64.9-19.1,70.1-53.3H185.3V238.1H302.2a109.2,109.2,0,0,1,1.9,20.7c0,70.8-47.5,121.2-118.8,121.2ZM415.5,273.8v35.5H380V273.8H344.5V238.3H380V202.8h35.5v35.5h35.2v35.5Z" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" class="about-icon" viewBox="0 0 448 512"
+						fill="currentColor">
+						<path
+							d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ****************** SECTION JOB INFO ****************** -->
+	<section id="job-info">
+		<div class="container">
+			<div class="col1">
+				<div id="experience" class="component" style="margin-top: 20px">
+					<div class="header">
+						<h1>Kinh nghiệm</h1>
+						<i class="header-ic ic-toolbox"></i>
+					</div>
+					<ul id="contentExperience" class="hide">
+						<li>
+							<h3>Làm việc tại Cty TNHH APT Showfreight Việt Nam</h3>
+							<p class="time-line">04/20014 - <span>Hiện tại</span></p>
+							<p>- Vị trí: Quản lý dự án phòng triển lãm(project manager)</p>
+						</li>
+						<li>
+							<h3>Làm việc tại Cty TNHH Agility Logistics Việt Nam</h3>
+							<p class="time-line">04/2008 - 04/2014</p>
+							<p>- Vị trí: Nhân viên triển khai dự án(project-excutive) (từ 2012-2014 chuyển sang phòng
+								triển lãm)</p>
+							<p>- Vị trí: Nhân viên IT (từ 2008-2011)</p>
+						</li>
+						<li>
+							<h3> Làm việc tại VP đại diện Translink</h3>
+							<p class="time-line">04/2007 - 04/2008</p>
+							<p>- Vị trí: Nhân viên IT </p>
+						</li>
+					</ul>
+					<div class="view-button">
+						<button id="btnViewMore" type="button" class="btn btn-warning hide">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View More
+						</button>
+					</div>
+					<div class="hide-button">
+						<button id="btnViewLess" type="button" class="btn btn-warning hide">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View Less
+						</button>
+					</div>
+				</div>
+				<div id="hobby" class="component" style="margin-top: 20px">
+					<div class="header">
+						<h1>Sở thích</h1>
+						<i class="header-ic ic-telescope"></i>
+					</div>
+					<div id="contentHobby" class="list-icons hide">
+						<p><i class="ic-megaphone"></i> Âm nhạc</p>
+						<p><i class="ic-strategy"></i> Chơi game</p>
+						<p><i class="ic-hotairballoon"></i> Du lịch</p>
+						<p><i class="ic-basket"></i> Nấu ăn</p>
+					</div>
+					<div class="view-button-hobby">
+						<button id="btnViewMoreHobby" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View More
+						</button>
+					</div>
+					<div class="hide-button-hobby">
+						<button id="btnViewLessHobby" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View Less 
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col2">
+				<div id="hocvan" class="component" style="margin-top: 20px">
+					<div class="header">
+						<h1>Học vấn</h1>
+						<i  class="header-ic ic-pencil"></i>
+					</div>
+					<ul id="contentHocVan" class="hide">
+						<li>
+							<h3>Funix</h3>
+							<p class="time-line">20/6/2022 - 20/12/2022</p>
+							<p>- Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack</p>
+						</li>
+						<li>
+							<h3>Cử nhân - Đại học DL Văn Lang</h3>
+							<p class="time-line">20/10/2002 - 01/03/2007</p>
+							<p>- Chuyên ngành: Công nghệ phần mềm</p>
+						</li>
+					</ul>
+					<div class="view-button-hocvan">
+						<button id="btnViewMoreHocVan" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View More
+						</button>
+					</div>
+					<div class="hide-button-hocvan">
+						<button id="btnViewLessHocVan" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View Less 
+						</button>
+					</div>
+				</div>
+				
+				<div id="language" class="component" style="margin-top: 20px">
+					<div class="header">
+						<h1>Ngôn ngữ</h1>
+						<i class="header-ic ic-mic"></i>
+					</div>
+					<ul id="contentLanguage" class="hide">
+						<li class="level-language english-level">
+							<h3>Tiếng Anh - IELTS 7.0</h3>
+							<div class="levels">
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+							</div>
+						</li>
+						<li class="level-language japan-level">
+							<h3>Tiếng Nhật - JLPT N.4</h3>
+							<div class="levels">
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+							</div>
+							
+						</li>
+					</ul>
+					<div class="view-button-language">
+						<button id="btnViewMoreLanguage" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View More
+						</button>
+					</div>
+					<div class="hide-button-language">
+						<button id="btnViewLessLanguage" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View Less 
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id= "col3">
+				<div id="excercise" class="component" style="margin-top: 20px">
+					<div class="header">
+						<h1>Hoạt động</h1>
+						<i class="header-ic ic-toolbox"></i>
+					</div>
+					<ul id="contentExcercise" class="hide">
+						<li>
+							<h3>Làm việc tại các công ty trên</h3>
+							<p class="time-line">04/2007 upto now</p>
+							<p>- Tham ra các hoạt động từ thiện hằng năm của cty.</p>
+						</li>
+					</ul>
+					<div class="view-button-excercise">
+						<button id="btnViewMoreExcercise" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View More
+						</button>
+					</div>
+					<div class="hide-button-excercise">
+						<button id="btnViewLessExcercise" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View Less 
+						</button>
+					</div>
+				</div>
+				<div id="skills" class="component" style="margin-top: 20px">
+					<div class="header">
+						<h1>Kỹ năng</h1>
+						<i class="header-ic ic-tools-2"></i>
+					</div>
+					<ul id="contentSkills" class="hide">
+						<li class="level-language html-css-level">
+							<h3>HTML/CSS: Intermediate</h3>
+							<div class="levels">
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+							</div>
+						</li>
+						<li class="level-language javascript-level">
+							<h3>Javascript: Intermediate</h3>
+							<div class="levels">
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+							</div>
+						</li>
+						<li class="level-language bootstrap-level">
+							<h3>Bootstrap 5: Intermediate</h3>
+							<div class="levels">
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+							</div>
+						</li>
+						<li class="level-language nodejs-level">
+							<h3>Nodejs: Intermediate</h3>
+							<div class="levels">
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+								<div class="child-level"></div>
+							</div>
+						</li>
+					</ul>
+					<div class="view-button-skills">
+						<button id="btnViewMoreSkills" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View More
+						</button>
+					</div>
+					<div class="hide-button-skills">
+						<button id="btnViewLessSkills" type="button" class="btn btn-warning hide ">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+								class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								<path
+									d="M7.247 11.14 2.451 5.658C.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z "	/>
+							</svg>View Less 
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ****************** SECTION CERTIFICATE ****************** -->
+	<section id="certificate" class="bg-grey">
+		<div class="container">
+			<h1 class="section-title">
+				Chứng chỉ - Giải thưởng
+			</h1>
+			<div class="certificate-items">
+				<div class="item">
+					<div class="item-content first-item">
+						<img src="/images/Cert_WEB.png" alt="web-cer">
+						<div class="content">
+							<div class="sub-title">chứng chỉ lập trình web - funix</div>
+							<p>- Chứng chỉ thuộc chương trình CCDN</p>
+							<p>- GPA: 8.6</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-content second-item">
+						<img src="/images/Cert_PRF.png" alt="prf-cer">
+						<div class="content">
+							<div class="sub-title">chứng chỉ lập trình javascript - funix</div>
+							<p>- Chứng chỉ thuộc chương trình CCDN</p>
+							<p>- GPA: 8.9</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-content third-item">
+						<img src="/images/Cert_DBI.png" alt="dbi-cer">
+						<div class="content">
+							<div class="sub-title">chứng chỉ lập trình web - funix</div>
+							<p>- Chứng chỉ thuộc chương trình CCDN</p>
+							<p>- GPA: 8.0</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ****************** SECTION PROJECT ****************** -->
+	<section id="project">
+		<div class="container">
+			<h1 class="section-title">
+				Dự án
+			</h1>
+			<div class="list-projects">
+				<div class="project-item">
+					<img src="/images/project_1.png" alt="CV">
+					<div class="info">
+						<a href="digital-cv.html"><h3> cv cá nhân </h3></a>
+						<div class="time-line">
+							<span>2001</span>
+							<i class="project-icon icon-user-1"></i>
+							<span>FUNIX</span>
+							<i class="project-icon icon-lamp"></i>
+							<span>Developer</span>
+						</div>
+						<div class="description">Mô tả</div>
+						<div class="description-content">Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như
+							kỹ năng nghề nghiệp</div>
+						<div class="mission">Nhiệm vụ</div>
+						<div class="mission-content">- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</div>
+						<div class="technique">Công nghệ</div>
+						<div class="technique-content">- HTML, CSS</div>
+					</div>
+				</div>
+
+				<div class="project-item">
+					<img src="/images/project_2.png" alt="web quan ly thu cung">
+					<div class="info">
+						<h3>trang web quản lý thú cưng</h3>
+						<div class="time-line">
+							<span>2001</span>
+							<i class="project-icon icon-user-1"></i>
+							<span>FUNIX</span>
+							<i class="project-icon icon-lamp"></i>
+							<span>Developer</span>
+						</div>
+						<div class="description">Mô tả</div>
+						<div class="description-content">Ứng dụng quản lý các thông tin thú cưng: Cân nặng, giống, tình
+							trạng tiêm chủng... Bao gồm các chức năng thêm / xóa / sửa</div>
+						<div class="mission">Nhiệm vụ</div>
+						<div class="mission-content">- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</div>
+						<div class="technique">Công nghệ</div>
+						<div class="technique-content">- HTML, CSS, Javascript</div>
+					</div>
+				</div>
+
+				<div class="project-item">
+					<img src="/images/project_3.png" alt="xem tin tuc">
+					<div class="info">
+						<h3>web công ty truyền thông Ocean Media</h3>
+						<div class="time-line">
+							<span>2001</span>
+							<i class="project-icon icon-user-1"></i>
+							<span>FUNIX</span>
+							<i class="project-icon icon-lamp"></i>
+							<span>Developer</span>
+						</div>
+						<div class="description">Mô tả</div>
+						<div class="description-content"> Ứng dụng giúp quản lý đặt lịch hẹn: gồm các chức năng tra cứu
+							/ thêm / sửa / xóa.</div>
+						<div class="mission">Nhiệm vụ</div>
+						<div class="mission-content">- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</div>
+						<div class="technique">Công nghệ</div>
+						<div class="technique-content">- HTML, CSS, REACT, NODEJS</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ****************** SECTION FOOTER ****************** -->
+	<section id="footer" class="bg-grey">
+		<div class="container">
+			<ul>
+				<i class="icon icon-facebook-circled"></i>
+				<li>Facebook</li>
+				<i class="icon icon-linkedin-circled"></i>
+				<li>Linkedin</li>
+				<i class="icon icon-github-circled"></i>
+				<li>Github</li>
+			</ul>
+		</div>
+	</section>
+	<script src="./index.js">
+	</script>
+	<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
