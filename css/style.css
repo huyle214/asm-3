@@ -1,0 +1,482 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+     margin:0 50px;
+}
+
+/* *************************** CSS Banner *************************** */
+#banner{
+    background-position-x: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/banner.jpg");
+    height: 420px;
+    color: #f7f7f7;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+#banner span{
+    font-size: 10px;
+    font-weight: 100;
+}
+
+/* *************************** CSS NAVIGATION BAR *************************** */
+#nav-bar {
+    text-align: center;
+    font-size: 12px;
+}
+.nav-bar-container{
+    position: relative;
+    display: flex;
+    gap: 260px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-left,
+.nav-bar-right{
+    display: flex;
+}
+.nav-bar-container a{
+    padding:20px 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    border-left: 1px solid #dee2e6;
+}
+.nav-bar-left a:last-child, .nav-bar-right a:last-child{
+    border-right: 1px solid #dee2e6;
+}
+/* .nav-bar-center h2{
+    font-weight: 400;
+} */
+/* .nav-bar-center span{
+    font-size: 8px;
+    color: #ced4da;
+} */
+
+.nav-bar-container a:link, .nav-bar-container a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-icon{
+    width: 12px;
+    height: 12px;
+    color: #4dabf7;
+    align-self: center;
+}
+
+/* ====================== ADVANCE REQUEST ==================================== */
+.nav-bar-container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border:8px solid white;
+    position: absolute;
+}
+
+/* ********************** SECTION ABOUT *********************** */
+#forminput{
+    display: flex;
+    flex-direction: column;
+}
+.bg-grey {
+    background: #f7f7f7;
+}
+#about .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    line-height: 1.6;
+   
+}
+#about .container h1{
+    padding-bottom: 32px;
+    font-size: 24px;
+}
+
+#target{
+   padding: 60px 30px 30px 240px;
+}
+#target p{
+    color: #868e96;
+}
+
+#personal-info{
+    background-color: #f1f3f5;
+     padding: 60px 210px 30px 30px ;
+}
+#personal-info span{
+    font-weight: 500;
+    color:#343a40;
+}
+#personal-info ul{
+    list-style-type: none;
+}
+#personal-info li{
+    color: #868e96;
+}
+#personal-info .icon{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+.about-icon{
+    width: 12px;
+    height: 12px;
+    color: #4dabf7;
+    align-self: center;
+    cursor: pointer;
+}
+#btnSubmit{
+    background-color:#4dabf7;
+    color: #f7f7f7;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+}
+    
+
+
+/* *************************** SECTION JOB INFO *************************** */
+
+/* =============== COMMON HEADER, CONTAINER FOR ALL OF COMPONENTs ========== */
+#job-info .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#job-info .header .header-ic{
+    margin-right: 25px;
+}
+#job-info .container{
+    width: 1040px;
+    margin: auto;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+} 
+#job-info .container h1{
+    font-size: 24px;
+}
+/* =============== COMPONENT "Kinh Nghiệm - Học Vấn - Hoạt Động" =======================*/
+
+#job-info ul{
+    color: #868e96;
+}
+#job-info li h3{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#job-info li .time-line{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+#job-info li .time-line span{
+    background-color: #4dabf7;
+    color: white;
+    padding: 2px 10px 0 10px;
+    border-radius: 5px;
+}
+#job-info li{
+    margin-bottom: 25px;
+    margin-left: 16px;
+}
+#job-info li::marker{
+    color: #4dabf7;
+}
+#job-info li p{
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* =============== COMPONENT "SỞ THÍCH" =======================*/
+#job-info .header-ic{
+    font-size: 32px;
+    color: #868e96;
+}
+#job-info .component{
+    border: 1px solid #dee2e6;
+    padding: 50px 20px;
+}
+
+#job-info .list-icons{
+    display: flex;
+    font-size: 10px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#job-info .list-icons p{
+    text-align: center;
+    color:#868e96;
+}
+#job-info .list-icons i{
+    display: block;
+    font-size: 16px;
+    border: 1px solid #4dabf7;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: auto auto 5px auto;
+    padding-top: 10px;
+    color:#4dabf7;
+}
+
+/* =============== COMPONENT "NGÔN NGỮ - KỸ NĂNG" =======================*/
+#job-info .level-language{
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.levels{
+    display: flex;
+    gap: 10px;
+}
+
+.child-level{
+    width: 40px;
+    height: 2px;
+    background-color: #dee2e6;
+}
+.english-level .levels div:nth-child(1){
+    background-color: #4dabf7;
+ }
+.japan-level .levels div:first-child{
+    /* background-color: #4dabf7; */
+}
+
+.javascript-level .levels div:nth-child(1),
+.javascript-level .levels div:nth-child(2),
+.bootstrap-level .levels div:nth-child(1),
+.bootstrap-level .levels div:nth-child(2){
+    background-color: #4dabf7;
+ }
+.html-css-level .levels div:nth-child(1),
+.html-css-level .levels div:nth-child(2),
+.nodejs-level .levels div:nth-child(1),
+.nodejs-level .levels div:nth-child(2){
+    background-color: #4dabf7;
+}
+
+/* *************** SECTION CERTIFICATE ************************/
+/* =============== COMON CSS ================================ */
+#certificate .container {
+    width: 1040px;
+    margin: auto;
+    padding: 30px 50px;
+   
+}
+#certificate .container h1{
+    font-size: 24px;
+}
+#certificate img{
+    width: 180px;
+    height: 100px;
+}
+/* =============== ITEM CSS ================================ */
+.certificate-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.certificate-items .item{
+    border-bottom: 1px solid #d6c08d;
+    gap: 10px;
+    width: 50%;
+    padding: 30px 0;
+}
+.certificate-items .item:last-child{
+    border-bottom: none;
+}    
+
+.certificate-items .item-content{
+    display: flex;
+    gap: 10px;
+}
+.certificate-items > .item > .first-item{
+    border-right: 1px solid #d6c08d;
+}
+.certificate-items > .item > .second-item{
+    padding-left: 10px;
+}
+.certificate-items .sub-title{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top:5px;
+    font-size: 12px;
+}
+.certificate-items p{
+    color: #868e96;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+/* *************** SECTION PROJECT ************************/
+#project .container {
+    width: 1040px;
+    margin: auto;
+    padding: 30px 50px;
+}
+#project .section-title{
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+#project .list-projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.project-item img{
+    width: 100%;
+    height: auto;
+}
+
+.project-item .info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 270px;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #868e96;
+    border: 1px solid #dee2e6;
+}
+.project-item h3{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+}
+.project-item .time-line{
+    grid-column: 1 / -1;
+}
+.project-item .time-line span:first-child{
+    padding: 5px 10px;
+    background-color: #4dabf7;
+    color: white;
+    border-radius: 10px;
+}
+.project-icon{
+    font-size: 14px;
+    margin-left:10px;
+}
+.project-item .description,
+.project-item .mission,
+.project-item .technique{
+    grid-column: 1 / 2;
+}
+.project-item h3,
+.project-item .time-line,
+.project-item .description,
+.project-item .mission,
+.project-item .technique,
+.project-item .description-content,
+.project-item .mission-content,
+.project-item .technique-content{
+    padding:10px 5px 10px 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+.project-item h3,
+.project-item .time-line{
+    padding:10px 20px;
+}
+.project-item .technique,
+.project-item .technique-content{
+    border-bottom: none;
+}
+
+/* *************** SECTION FOOTER ************************/
+#footer ul{
+    display: flex;
+    font-size: 10px;
+    color:#868e96;
+    justify-content: center;
+    align-items: center;
+}
+#footer .icon{
+    font-size: 24px;
+    color: #4dabf7;
+    border-radius: 50%;
+    padding: 30px 0;
+}
+#footer li{
+    padding:30px 0;
+    margin-right: 30px;
+    list-style-type: none;
+    
+}
+.hide{
+    display: none !important;
+    
+}
+.show{
+    display:flex;
+}
+.btn{
+    background-color: rgba(255, 255, 5, 0.596);
+    border-radius: 30px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 20px;
+}
+/* css project chapter */
+#chapter-one{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: blue;
+    gap: 15px;
+    border-top: 15px solid blue;
+}
+.goals{
+    padding: 10px;
+    background-color: #f0f8ff;
+    
+}
+.scopes{
+    padding: 10px;
+    background-color: #f0f8ff;
+}
+.team{
+    padding: 10px;
+    background-color: #f0f8ff;
+}
+.primary{
+    padding: 10px;
+    background-color: #f0f8ff;
+}
+.timeline{
+    padding: 10px;
+    background-color: #f0f8ff;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3 ;
+    
+}
+#chapter-one .goals li{
+    display: grid ;
+    grid-template-columns: 30px 1fr;
+    gap: 30px;
+    padding-top: 10px;
+    padding-left: 30px;
+    border-bottom: 0,5px solid red;
+    
+}
+#chapter-one .goals {
+    padding: 50px;
+
+}
+#chapter-one h4 {
+    border-bottom: 0,5px solid red !important ;
+}
+
+
+
